@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-image: url(/assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      @media (min-width: 640px) {
+        body {
+          background-image: url(/assets/images/background-pattern-desktop.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="m-0 p-0 box-border h-screen bg-light-pink font-Work-Sans">
+    <main
+      class="accordion sm:flex sm:flex-col sm:items-center sm:justify-center"
+    >
+      <div
+        class="container m-5 mt-[140px] bg-white w-[90%] p-[30px] rounded-lg h-max-[540px] sm:w-[600px] sm:h-max-[570px] sm:ml-0"
+      >
+        <!-- faqs heading starts here -->
+        <div class="head-title flex items-center sm:mt-2">
+          <img
+            class="size-8 sm:"
+            src="/assets/images/icon-star.svg"
+            alt="icon-star"
+          />
+          <h1 class="font-bold text-4xl text-dark-purple ml-7 sm:text-6xl">
+            FAQs
+          </h1>
+        </div>
+
+        <!-- first Question starts here -->
+        <div class="firstQuestion mt-8">
+          <div
+            id="btn1"
+            class="flex relative content-between hover:cursor-pointer"
+          >
+            <button
+              class="text-dark-purple text-left mr-16 font-semibold transition hover:text-purple sm:text-lg"
+            >
+              What is Frontend Mentor, and how will it help me?
+              <img
+                id="img1"
+                class="img1 hidden absolute right-1 top-0"
+                src="/assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                id="img2"
+                class="img1  absolute right-1 top-0"
+                src="/assets/images/icon-minus.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <p id="q1" class=" text-grayish-purple mt-7">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+        <!-- first Question ends here -->
+
+        <!-- horizontal line between questions -->
+        <hr class="mt-6 mb-8" />
+
+        <!-- second Question starts here -->
+        <div>
+          <div id="btn2" class="flex relative hover:cursor-pointer">
+            <button
+              class="text-dark-purple text-left font-semibold sm:text-lg transition hover:text-purple"
+            >
+              Is Frontend Mentor free?
+              <img
+                id="img3"
+                class="absolute right-1 top-0"
+                src="/assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                id="img4"
+                class="img hidden absolute right-1 top-0"
+                src="/assets/images/icon-minus.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <p id="q2" class="hidden text-grayish-purple mt-7">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+        <!-- second Question ends here -->
+
+        <!-- horizontal line between questions -->
+        <hr class="mt-6 mb-8" />
+
+        <!-- third Question starts here -->
+        <div>
+          <div id="btn3" class="flex relative hover:cursor-pointer">
+            <button
+              class="text-dark-purple text-left font-semibold sm:text-lg mr-12 transition hover:text-purple"
+            >
+              Can I use Frontend Mentor projects in my portfolio?
+              <img
+                id="img5"
+                class="img absolute right-1 top-0"
+                src="/assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                id="img6"
+                class="img hidden absolute right-1 top-0"
+                src="/assets/images/icon-minus.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <p id="q3" class="hidden text-grayish-purple mt-7">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </div>
+        <!-- third Question ends here -->
+
+        <!-- horizontal line between questions -->
+        <hr class="mt-6 mb-8" />
+
+        <!-- fourth Question starts here -->
+        <div class="">
+          <div id="btn4" class="flex relative hover:cursor-pointer">
+            <button
+              class="text-dark-purple text-left font-semibold sm:text-lg mr-20 transition hover:text-purple"
+            >
+              How can I get help if I'm stuck on a Frontend Mentor challenge?
+              <img
+                id="img7"
+                class="img absolute right-1 top-0"
+                src="/assets/images/icon-plus.svg"
+                alt=""
+              />
+              <img
+                id="img8"
+                class="img hidden absolute right-1 top-0"
+                src="/assets/images/icon-minus.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <p id="q4" class="hidden text-grayish-purple mt-7">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+        <!-- fourth Question ends here -->
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
